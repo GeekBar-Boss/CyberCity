@@ -50,7 +50,7 @@ function IntroductionLoader(){
 function ItemsLoader(name){
     var itemsdiv = "<div class=\"blog-grid\">\n" +
     "<div class=\"blog-item\">\n" +
-    "<img src=\"/bg_img/$bg_name$\" alt=\"\">\n" +
+    "<img src=\"https://cdn.jsdelivr.net/gh/GeekBar-Boss/CyberCity@latest/bg_img/$bg_name$\" alt=\"\">\n" +
     "<div class=\"bi-tag\">$tag$</div>\n" +
     "<div class=\"bi-text\">\n" +
     " <div><h3><b id='author'>Author:$author$</b></h3></div>\n" +
