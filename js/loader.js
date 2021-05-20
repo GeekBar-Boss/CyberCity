@@ -50,7 +50,7 @@ function IntroductionLoader(){
 function ItemsLoader(name){
     var itemsdiv = "<div class=\"blog-grid\">\n" +
     "<div class=\"blog-item\">\n" +
-    "<img src=\"https://cdn.jsdelivr.net/gh/GeekBar-Boss/CyberCity@latest/bg_img/$bg_name$\" alt=\"\">\n" +
+    "<img src=\"https://cdn.jsdelivr.net/gh/GeekBar-Boss/CyberCity/bg_img/$bg_name$\" alt=\"\">\n" +
     "<div class=\"bi-tag\">$tag$</div>\n" +
     "<div class=\"bi-text\">\n" +
     " <div><h3><b id='author'>Author:$author$</b></h3></div>\n" +
@@ -88,7 +88,7 @@ function PageLoader(author,title){
                 $("<link>")
                     .attr({ rel: "stylesheet",
                         type: "text/css",
-                        href: "/codestyles/"+codetheme.exec(msg)[1]+".css"
+                        href: "https://cdn.jsdelivr.net/gh/GeekBar-Boss/CyberCity/codestyles/"+codetheme.exec(msg)[1]+".css"
                     })
                     .appendTo("head");
                 $(document).attr("title",ret[0].title + " - " + ret[0].author + " | CyberCity");
