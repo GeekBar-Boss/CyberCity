@@ -122,10 +122,10 @@ function highlightAllBlock(){
     });
 }
 function setUpleftcornerButton(){
-    $(".menu-wrapper,.menu-switch").mouseover(function(){
+    $(".menu-wrapper,.menu-switch").mouseenter(function(){
     	$(this).fadeTo("fast",1);
     });
-    $(".menu-wrapper,.menu-switch").mouseout(function(){
+    $(".menu-wrapper,.menu-switch").mouseleave(function(){
     	$(this).fadeTo("fast",0.01);
     
     });
