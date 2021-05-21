@@ -245,7 +245,7 @@ ol {
 .menu-wrapper {
 	position: fixed;
 	width: 90px;
-	height: 100%;
+	/*height: 100%;*/
 	left: 0;
 	top: 0;
 	-webkit-box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
