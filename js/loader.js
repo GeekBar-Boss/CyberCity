@@ -122,6 +122,7 @@ function highlightAllBlock(){
     });
 }
 function setUpleftcornerButton(){
+    $(".menu-wrapper").fadeTo("fast",0.01);;
     $(".menu-wrapper").mouseenter(function(){
     	$(this).fadeTo("fast",1);
     });
