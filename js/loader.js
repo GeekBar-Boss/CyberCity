@@ -123,10 +123,10 @@ function highlightAllBlock(){
 }
 function setUpleftcornerButton(){
     $(".menu-wrapper").mouseover(function(){
-    	$(this).fadeIn(slow);
+    	$(this).fadeIn("slow");
     });
     $(".menu-wrapper").mouseout(function(){
-    	$(this).fadeOut(slow);
+    	$(this).fadeOut("slow");
     
     });
 }
