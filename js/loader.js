@@ -14,6 +14,7 @@
                 break;
         case 3 : templateloader(2);PageLoader(RoutePattern[1],RoutePattern[2]);break
     }
+    setUpleftcornerButton();
 })();
 
 function templateloader(RoutePattern){
@@ -118,5 +119,14 @@ function reloadimages(){
 function highlightAllBlock(){
     $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
+    });
+}
+function setUpleftcornerButton(){
+    $(".menu-wrapper").focus(function(){
+    	$(this).fadeIn(slow);
+    });
+    $(".menu-wrapper").blur(function(){
+    	$(this).fadeOut(slow);
+    
     });
 }
