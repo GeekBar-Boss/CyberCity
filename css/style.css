@@ -1164,7 +1164,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .blog-section {
 	height: 100%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 }
 
