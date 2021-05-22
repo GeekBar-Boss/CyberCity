@@ -23,11 +23,11 @@ body {
 	/*padding-left: 90px;*/
 }
 
-@media (max-width: 420px) {
+/*@media (max-width: 420px) {
 	body {
 		padding-left: 60px;
 	}
-}
+}*/
 
 h1,
 h2,
