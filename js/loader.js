@@ -125,12 +125,10 @@ function highlightAllBlock(){
 
 function setUpleftcornerButton(PromptFlag){
     if(PromptFlag){
-	for(let i=1;i<=3;i++){
-		$(".menu-wrapper").delay(1000).fadeOut(500);
-		$(".menu-wrapper").delay(1800).fadeIn(500);
-    	}
+	$(".menu-wrapper").fadeTo(1000,0);
+	$(".menu-wrapper").delay(2000).fadeTo(1000,1);
     }
-    $(".menu-wrapper").delay(1000).fadeTo(500,0.01);
+    $(".menu-wrapper").fadeTo(500,0.01);
     $(".menu-wrapper").mouseenter(function(){
     	$(this).fadeTo("fast",1);
     });
