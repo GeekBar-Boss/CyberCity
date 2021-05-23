@@ -128,7 +128,7 @@ function setUpleftcornerButton(PromptFlag){
 	$(".menu-wrapper").fadeTo(10,0);
 	$(".menu-wrapper").fadeTo(1000,1);
     }
-    $(".menu-wrapper").delay(1000).fadeTo(500,0.01);
+    $(".menu-wrapper").delay(1000).fadeTo(1000,0.01);
     $(".menu-wrapper").mouseenter(function(){
     	$(this).fadeTo("fast",1);
     });
