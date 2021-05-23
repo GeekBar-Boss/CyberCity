@@ -124,13 +124,12 @@ function highlightAllBlock(){
 }
 
 function setUpleftcornerButton(PromptFlag){
-    $(".menu-wrapper").fadeTo("fast",0.01);
     if(PromptFlag){
-	    for(let i=0;i<5;i++){
-    		$(".menu-wrapper").delay("fast").fadeTo("slow",1);
-		$(".menu-wrapper").delay("fast").fadeTo("slow",0.01);
+	for(let i=0;i<8;i++){
+    		$(".menu-wrapper").fadeToggle("fast");
     	}
     }
+    $(".menu-wrapper").fadeTo("fast",0.01);
     $(".menu-wrapper").mouseenter(function(){
     	$(this).fadeTo("fast",1);
     });
