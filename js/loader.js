@@ -126,7 +126,7 @@ function highlightAllBlock(){
 function setUpleftcornerButton(PromptFlag){
     if(PromptFlag){
 	for(let i=0;i<6;i++){
-    		$(".menu-wrapper").fadeToggle("slow");
+    		$(".menu-wrapper").fadeTo("slow",i%2);
     	}
     }
     $(".menu-wrapper").fadeTo("fast",0.01);
