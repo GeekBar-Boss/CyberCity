@@ -1,13 +1,12 @@
 (function(){
     var path = window.location.pathname;
     var RoutePattern = path.split("/");
-    var PromptFlag = false;
     switch(RoutePattern.length){
         case 2 : if(path == "/"){
-                     templateloader(0);PromptFlag=true;break;
+                     templateloader(0);break;
                 }
                  switch(RoutePattern[1]){
-                     case "index" : templateloader(0);PromptFlag=true;break;
+                     case "index" : templateloader(0);break;
                      case "articles" : templateloader(1);ItemsLoader(RoutePattern[1]);break;
                      case "introduction" : templateloader(2);IntroductionLoader();break;
                      default : templateloader(1);ItemsLoader(RoutePattern[1]);break;
@@ -15,7 +14,7 @@
                 break;
         case 3 : templateloader(2);PageLoader(RoutePattern[1],RoutePattern[2]);break
     }
-    setUpleftcornerButton(PromptFlag);
+    setUpleftcornerButton();
 })();
 
 function templateloader(RoutePattern){
@@ -123,12 +122,8 @@ function highlightAllBlock(){
     });
 }
 
-function setUpleftcornerButton(PromptFlag){
-    if(PromptFlag){
-	$(".menu-wrapper").fadeTo(10,0);
-	$(".menu-wrapper").fadeTo(1000,1);
-    }
-    $(".menu-wrapper").delay(1000).fadeTo(1000,0.01);
+function setUpleftcornerButton(){
+    $(".menu-wrapper").delay(1500).fadeTo(1000,0.01);
     $(".menu-wrapper").mouseenter(function(){
     	$(this).fadeTo("fast",1);
     });
