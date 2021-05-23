@@ -126,8 +126,8 @@ function highlightAllBlock(){
 function setUpleftcornerButton(PromptFlag){
     if(PromptFlag){
 	for(let i=1;i<=6;i++){
-    		$(".menu-wrapper").delay("slow").fadeTo("fast",0.01);
-		$(".menu-wrapper").delay("slow").fadeTo("fast",1);
+    		$(".menu-wrapper").delay("slow").fadeTo("fast",1);
+		$(".menu-wrapper").delay("slow").fadeTo("fast",0.01);
     	}
     }
     $(".menu-wrapper").fadeTo("fast",0.01);
