@@ -127,7 +127,7 @@ function setUpleftcornerButton(PromptFlag){
     if(PromptFlag){
 	for(let i=0;i<6;i++){
 		$(".menu-wrapper").fadeToggle(1000);
-		if($(".menu-wrapper").css("display")==none){
+		if($(".menu-wrapper").css("display")=="none"){
 			$(".menu-wrapper").fadeToggle(1000);
 		}
 	}
